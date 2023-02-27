@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Login Screen</title>
+</head>
+<body>
+        <section class="form-container">
+            <div class="placeholder">
+                <h1 class="title">Login</h1>
+                <form action="" method="get" title="Login Form" class="form">
+
+                    <div class="form-placeholder email-form">
+                        <label for="email" class="email email-label">
+                            <span> E-mail </span>
+                        </label>
+                    
+                        <input class="form-input-text email" type="email" name="email"  id="email" required autocomplete="off">    
+                        <ion-icon name="mail-outline"></ion-icon>
+                        </div>
+
+                    <div class="form-placeholder password-form">
+                        <label for="password" class="password password-label">
+                            <span>Password </span> 
+                        </label>
+                        <input class="password form-input-text" type="password" name="password"  id="password" required>    
+                        <ion-icon name="lock-closed-outline"></ion-icon>
+
+
+
+
+                    </div>
+
+                    <div class="remember">
+                        <input type="checkbox" id="remember-password" name="remember-password">
+                        <label for="remember-password" class="nowrap">Remember Me</label>   
+                    </div>
+
+                    <p class="forgot">
+                        <a href="#">Forgot Password?</a>
+                    </p>
+
+                    <div class="submit-button">
+                        <input type="submit" value="Log In" class="submit">  
+                    </div>
+
+                    <p class="register">
+                       <span class="nowrap"> Don't have an account? <span class="bold"><a href="#">Register Here</a></span>
+                    </p>
+                </form>
+            </div>
+        </section>
+        <script src="scripts.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>   
+</body>
+</html>
