@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Poppins&family=Roboto&display=swap');
+/* Makes sizing simpler */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  /* For Debugging Purposes */
+  /* background-color: rgba(0,255,0,0.1); */
+}
+
+/* Remove default spacing */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Min body height */
+
+body {
+  color: #fff;
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  background-color: blueviolet;
+  background-image:url("/img/BackgroundImage.jpg");
+
+}
+
+/* Responsive images/videos */
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+body{
+  display: grid;
+  place-content: center;
+}
+a:any-link{
+  color: #fff;
+  text-decoration: underline solid transparent;
+  transition: text-decoration 0.5s;
+}
+
+a:hover{
+  text-decoration: underline solid #fff;
+}
+
+.form-container{
+  backdrop-filter: blur(10px);
+  border-radius: 2rem;
+  position: relative;
+  width: 23vw;
+  height: 55vh;
+  border: 1px solid #fff;
+}
+
+h1{
+  margin: 1rem 0 1rem 0;
+  text-align: center;
+}
+
+.form-placeholder{
+  position: relative;
+  height: 3rem;
+  width: 80%;
+  left: 2rem;
+  border-bottom: 1px solid #fff;
+}
+
+.form-placeholder label{
+  font-family: 'Poppins', sans-serif;
+  position: absolute;
+  top: 2rem;
+  left: 5px;
+  transform: translateY(-50%);
+  transition: top 0.5s;
+}
+.email-form{
+  margin-bottom: 1rem;
+}
+ion-icon{
+  position: absolute;
+  right: 1rem;
+  top: 1.7rem;
+}
+
+.form-placeholder input{
+  color: #fff;
+  position: absolute;
+  top: 1.5rem;
+  width: 99%;
+  height: 1.5rem;
+  border: transparent;
+  background: transparent;
+  outline: transparent;
+}
+
+label:has(~ .email:focus),
+label:has(~ .email:valid)
+{
+  top:1rem;
+}
+
+label:has(~ .password:focus),
+label:has(~ .password:valid)
+{
+  top:1rem;
+}
+
+.remember{
+  margin-top: 1rem;
+  text-align: center;
+}
+.forgot{
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+.submit-button{
+  width: 100%;
+}
+.forgot{
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+.submit-button{
+  margin-left: 2.5rem;
+  margin-top: 0.5rem;
+  width: 75%;
+}
+
+input[type=submit]{
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff;
+  border: none;
+  outline: none;
+  width: 100%;
+  height: 2rem;
+  border-radius: 1rem;
+}
+.register{
+  text-align: center;
+  margin-top: 1rem;
+}
