@@ -23,7 +23,7 @@ body {
   min-height: 100vh;
   font-family: 'Poppins', sans-serif;
   background-color: blueviolet;
-  background-image:url("/img/BackgroundImage.jpg");
+  background-image:url("/BackgroundImage.jpg");
 
 }
 
